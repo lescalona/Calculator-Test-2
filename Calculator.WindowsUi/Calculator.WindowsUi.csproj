@@ -51,6 +51,7 @@
     <Compile Include="Common\Attributes\EnsureMinimumElementsAttribute.cs" />
     <Compile Include="Common\Attributes\HiddenAttribute.cs" />
     <Compile Include="Common\DataErrorInfoExtensions.cs" />
+    <Compile Include="Common\DataGridViewColumnFluidExtensions.cs" />
     <Compile Include="Common\ICommand.cs" />
     <Compile Include="Common\ICommandText.cs" />
     <Compile Include="Common\ObservableObject.cs" />
@@ -65,11 +66,23 @@
     <Compile Include="FormCalculator.Designer.cs">
       <DependentUpon>FormCalculator.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormHistorial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHistorial.Designer.cs">
+      <DependentUpon>FormHistorial.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainViewModelFactory.cs" />
+    <Compile Include="Models\CalculatorViewModel.cs" />
+    <Compile Include="Models\DetallesHistorialViewModel.cs" />
+    <Compile Include="Models\HistorialViewModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormCalculator.resx">
       <DependentUpon>FormCalculator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHistorial.resx">
+      <DependentUpon>FormHistorial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -99,9 +112,7 @@
       <Name>Calculator.Common</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

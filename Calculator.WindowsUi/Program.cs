@@ -16,7 +16,7 @@ namespace Calculator.WindowsUi
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormCalculator());
+            Application.Run(new FormCalculator(new Models.CalculatorViewModel()));
         }
     }
 }
