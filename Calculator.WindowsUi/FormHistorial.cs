@@ -1,15 +1,6 @@
 ﻿using Calculator.WindowsUi.Models;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Calculator.WindowsUi.Common;
-using System.Linq;
 using AadiCapif.Sci.WindowsUi.Common;
 
 namespace Calculator.WindowsUi
